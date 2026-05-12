@@ -1,0 +1,16 @@
+{
+  "name": "buzz-golf-usage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "usage": "node src/buzz-usage.js",
+    "usage:debug": "node src/buzz-usage.js --debug",
+    "context:browser": "node src/context-from-browser-export.js",
+    "weekly": "node src/build-weekly-prompt.js",
+    "weekly:refresh": "node src/weekly.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
