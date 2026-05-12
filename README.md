@@ -86,23 +86,3 @@ If browser automation breaks because Buzz changes the site:
 ```powershell
 & "$env:LOCALAPPDATA\OpenAI\Codex\bin\node.exe" src/build-weekly-prompt.js --usage .\buzz-golfer-usage-YYYY-MM-DD.json
 ```
-
-## Publish To GitHub
-
-This project can publish itself to GitHub without installing `git` or `gh`.
-
-Add these to `.env`:
-
-```env
-GITHUB_TOKEN=your-token
-GITHUB_REPO=buzz-fantasy-golf-weekly-prompt
-GITHUB_PRIVATE=true
-```
-
-Then run:
-
-```powershell
-.\publish-github.cmd
-```
-
-The publish script uploads only project source files. It does not upload `.env`, `.buzz-session.json`, or `output/`.
